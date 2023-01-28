@@ -1,0 +1,17 @@
+{
+  "name": "linker",
+  "version": "1.0.0",
+  "description": "link discordid to steamid",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
+  "author": "x3R07YP3",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.0.1"
+  }
+}

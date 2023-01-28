@@ -1,0 +1,19 @@
+{
+    "name": "doc_discord_bot",
+    "scripts": {
+      "start": "docsify start . -c ssr.config.js",
+      "deploy": "now -p"
+    },
+    "files": [
+      "docs"
+    ],
+    "docsify": {
+      "config": {
+        "basePath": "https://docsify.js.org/",
+        "loadSidebar": true,
+        "loadNavbar": true,
+        "coverpage": true,
+        "name": "docsify"
+      }
+    }
+  }
