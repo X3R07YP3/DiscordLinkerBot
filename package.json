@@ -1,6 +1,6 @@
 {
   "name": "linker",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "link discordid to steamid",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
   "dependencies": {
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
+    "events": "^3.3.0",
     "fs": "^0.0.1-security",
-    "mysql2": "^3.0.1"
+    "mysql2": "^3.0.1",
+    "rcon.js": "^1.0.0"
   }
 }

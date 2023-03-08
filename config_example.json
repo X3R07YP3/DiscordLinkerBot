@@ -1,0 +1,32 @@
+{
+    "TOKEN": "BOT_TOKEN",
+    
+    "clientId": "clientid",
+    "guildId": "guildid",
+    
+    "RCON_HOST": "ip",
+    "RCON_PORT": "port",
+    "RCON_PASSWORD": "password",
+
+    "servers": [
+      {
+        "name": "map name",
+        "host": "ip",
+        "port": 32338,
+        "password": "pass"
+      },
+      {
+        "name": "map name",
+        "host": "ip",
+        "port": 32341,
+        "password": "passw"
+      },
+      {
+        "name": "map name",
+        "host": "ip",
+        "port": 32336,
+        "password": "passw"
+      }
+    ]
+  }
+  
