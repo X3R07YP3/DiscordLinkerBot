@@ -1,13 +1,14 @@
 const { SlashCommandBuilder, Message } = require('discord.js');
 const mysql = require('mysql2');
-require('dotenv').config();
+//require('dotenv').config();
+const config = require('../config.json');
 
-const connection = mysql.createConnection({
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DB,
-    port: process.env.MYSQL_PORT,
+const connection = mysql.createPool({
+    host: config.MYSQL_HOST,
+    user: config.MYSQL_USER,
+    password: config.MYSQL_PASSWORD,
+    database: config.MYSQL_DB,
+    port: config.MYSQL_PORT,
     supportBigNumbers: true,
     bigNumberStrings: true
 });
