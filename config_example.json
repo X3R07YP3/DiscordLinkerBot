@@ -7,6 +7,12 @@
     "RCON_HOST": "ip",
     "RCON_PORT": "port",
     "RCON_PASSWORD": "password",
+    
+    "MYSQL_HOST": "ip",
+    "MYSQL_PORT": "3306",
+    "MYSQL_USER": "user",
+    "MYSQL_PASSWORD": "pass",
+    "MYSQL_DB": "dbname",
 
     "servers": [
       {
