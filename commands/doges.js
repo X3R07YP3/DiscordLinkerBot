@@ -7,6 +7,8 @@ const connection = mysql.createPool({
   password: config.MYSQL_PASSWORD,
   database: config.MYSQL_DB,
   port: config.MYSQL_PORT,
+  supportBigNumbers: true, //
+  bigNumberStrings: true, //
 });
 
 module.exports = {
@@ -16,25 +18,24 @@ module.exports = {
     async execute(interaction) {
         let discordId = interaction.user.id;
 
-    // Obtenemos el SteamId correspondiente al DiscordId
     connection.query(
-      'SELECT SteamId FROM discordsteamlinks WHERE DiscordId = ?',
+      'SELECT SteamId FROM discordgamelinker WHERE DiscordId = ?',
       [discordId],
       function(err, results) {
+        console.log(results);
         if (err) {
           console.log(err);
-          message.reply('Error al obtener los puntos.');
+          interaction.reply('Error al obtener los puntos.');
         } else if (results.length > 0) {
           const steamId = results[0].SteamId;
-
-          // Obtenemos los puntos de la tabla Points
+          
           connection.query(
             'SELECT Points, TotalSpent FROM arkshopplayers WHERE SteamId = ?',
             [steamId],
             function(err, results) {
               if (err) {
                 console.log(err);
-                message.reply('Error al obtener los puntos.');
+                interaction.reply('Error al obtener los puntos.');
               } else if (results.length > 0) {
                 const points = results[0].Points;
                 const totalSpent = results[0].TotalSpent;
@@ -53,12 +54,12 @@ module.exports = {
                 );
                 interaction.reply({ embeds: [embed] });
               } else {
-                message.reply('No se encontraron puntos para este usuario.');
+                interaction.reply('No se encontraron puntos para este usuario.');
               }
             }
           );
         } else {
-          message.reply('No se encontró una cuenta de Steam vinculada a este usuario.');
+          interaction.reply('No se encontró una cuenta de Steam vinculada a este usuario.');
           connection.release();
         }
       }

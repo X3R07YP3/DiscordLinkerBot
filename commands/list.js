@@ -23,6 +23,7 @@ module.exports = {
                 const playerList = players.map(player => {
                     const playerData = player.split(',');
                     const playerName = playerData[0].trim().split('. ')[1].trim();
+                    console.log(playerData);
                     return playerName;
                 }).join(', ');
                 interaction.reply(`There are ${playerCount} players on the server:\n${playerList}`);
