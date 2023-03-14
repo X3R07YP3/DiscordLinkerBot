@@ -1,0 +1,14 @@
+--------1.0.4-------------
+-Added role assignment on config (for functions in new versions)
+-Added multiple databases (for functions in new versions)
+-Added autoroll on /link command
+-Added removal of linkcode once the user is verified
+--------1.0.3-------------
+-Added /doges command 
+-Added /list command
+-Added /playerlist command
+-Added Rcon connection with multiple servers
+--------1.0.2-------------
+-fixed some bugs in MySQL query
+--------1.0.1-------------
+-initial version, code base

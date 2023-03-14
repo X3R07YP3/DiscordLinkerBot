@@ -1,38 +1,66 @@
 {
-    "TOKEN": "BOT_TOKEN",
-    
-    "clientId": "clientid",
-    "guildId": "guildid",
-    
-    "RCON_HOST": "ip",
-    "RCON_PORT": "port",
-    "RCON_PASSWORD": "password",
-    
-    "MYSQL_HOST": "ip",
-    "MYSQL_PORT": "3306",
-    "MYSQL_USER": "user",
-    "MYSQL_PASSWORD": "pass",
-    "MYSQL_DB": "dbname",
+  "TOKEN": "",
 
-    "servers": [
-      {
-        "name": "map name",
-        "host": "ip",
-        "port": 32338,
-        "password": "pass"
-      },
-      {
-        "name": "map name",
-        "host": "ip",
-        "port": 32341,
-        "password": "passw"
-      },
-      {
-        "name": "map name",
-        "host": "ip",
-        "port": 32336,
-        "password": "passw"
-      }
-    ]
-  }
+  "MYSQL_HOST": "",
+  "MYSQL_PORT": "3306",
+  "MYSQL_USER": "",
+  "MYSQL_PASSWORD": "",
+  "MYSQL_DB": "",
+
+  "rolassign": [
+    {
+      "name": "autoroll", 
+      "active": true,
+      "rolId": ""
+    }
+  ],
   
+  "RENAMEPLAYER": true,
+
+  "databaseConnections": [
+    {
+      "name": "ArkShop", 
+      "host": "",
+      "user": "",
+      "PORT": "",
+      "password": "",
+      "database": ""
+    },
+    {
+      "name": "DiscordLinker", 
+      "host": "",
+      "PORT": "",
+      "user": "",
+      "password": "",
+      "database": ""
+    }
+  ],
+
+  "clientId": "",
+  "guildId": "",
+
+  "RCON_HOST": "",
+  "RCON_PORT": "",
+  "RCON_PASSWORD": "",
+  
+  "servers": [
+    {
+      "name": "gen2",
+      "host": "",
+      "port": 32338,
+      "password": ""
+    },
+    {
+      "name": "island",
+      "host": "",
+      "port": 32341,
+      "password": ""
+    },
+    {
+      "name": "extinction",
+      "host": "",
+      "port": 32336,
+      "password": ""
+    }
+  ]
+}
